@@ -1,5 +1,5 @@
 {
-  "name": "attila",
+  "name": "jk-attila",
   "description": "Ghost Theme",
   "demo": "http://attila.zutrinken.com",
   "version": "1.7.6",
@@ -12,7 +12,7 @@
     "mobile": "src/screenshot-mobile.jpg"
   },
   "author": {
-    "name": "Peter Amende",
+    "name": "Peter Amende, forked by Jayden Kerr",
     "email": "xoxo@zutrinken.com",
     "url": "http://zutrinken.com"
   },
@@ -30,7 +30,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zutrinken/attila.git"
+    "url": "https://github.com/jaydenk/attila.git"
   },
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
