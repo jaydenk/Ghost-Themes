@@ -1,40 +1,32 @@
-<!DOCTYPE html>
-<html lang="{{lang}}">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+{{!< default}}
 
-	<title>{{meta_title}}</title>
+{{#post}}
 
-	<meta name="HandheldFriendly" content="True" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<header id="post-header"{{#if cover_image}} class="has-cover" {{/if}}>
+	<div class="inner">
+		<nav id="navigation">
+			{{#if @blog.logo}}
+			<span class="blog-logo">
+				<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{t "Blog Logo"}}" /></a>
+			</span>
+			{{/if}}
+		</nav>
+		<h1 class="post-title">{{{title}}}</h1>
+		{{#if cover_image}}<div class="post-cover cover" style="background-image: url('{{img_url cover_image}}');"></div>{{/if}}
+	</div>
+</header>
 
-	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+<main class="content" role="main">
+	<article class="{{post_class}}">
+		<div class="inner">
 
-	{{ghost_head}}
-</head>
+			<section class="post-content">
+				text-align: right;
+				{{content}}
+			</section>
 
-<body class="{{body_class}}">
+		</div>
+	</article>
+</main>
 
-	{{navigation}}
-
-	<section id="wrapper">
-		<a class="hidden-close"></a>
-		{{{body}}}
-		<div id="body-class" style="display: none;" class="{{body_class}}"></div>
-
-		<footer id="footer">
-			<div class="inner">
-				<section class="credits">
-					<span class="credits-theme">Jayden Kerr © 2018</span>
-				</section>
-			</div>
-		</footer>
-	</section>
-
-	<script type="text/javascript" src="{{asset "js/script.js"}}"></script>
-
-	{{ghost_foot}}
-
-</body>
-</html>
+{{/post}}
