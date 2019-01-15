@@ -1,16 +1,20 @@
 {{!< default}}
 {{!-- This a custom page layout for the about me page. --}}
+<link rel="stylesheet" href="jk.css">
 {{#post}}
-<article class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+<article class="post-content {{post_class}}">
 
     {{#if feature_image}}
     <div class="post-content-image">
-        <img class="kg-image" src="{{feature_image}}" alt="{{title}}" />
+        <img class="jk-image" src="{{feature_image}}" alt="{{title}}" />
     </div>
     {{/if}}
 
+    <div class="jk-image"></div>
+
     <div class="post-content-body">
         {{content}}
+
     </div>
 
 </article>

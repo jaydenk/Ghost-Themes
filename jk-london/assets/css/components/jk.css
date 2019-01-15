@@ -1,0 +1,8 @@
+.jk-image {
+    width: 50vw;
+    height: 100vh;
+    background-image: url("https://jaydenkerr.net/content/images/2019/01/Me.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
